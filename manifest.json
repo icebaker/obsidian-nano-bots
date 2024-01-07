@@ -1,0 +1,10 @@
+{
+	"id": "nano-bots",
+	"name": "Nano Bots",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Nano Bots for Obsidian: small, AI-powered bots that can be easily shared as a single file, designed to support multiple providers such as Cohere Command, Google Gemini, Maritaca AI, Mistral AI, Ollama, OpenAI ChatGPT, and others, + function calling.",
+	"author": "icebaker",
+	"authorUrl": "https://github.com/icebaker/obsidian-nano-bots",
+	"isDesktopOnly": true
+}
