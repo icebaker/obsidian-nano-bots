@@ -112,14 +112,14 @@ There are no default shortcuts, but you can add your own by going to "Settings" 
 
 These are recommented shortcuts that you may choose do add:
 
-`ctrl+b` -> 🤖 Nano Bots: [Evaluate](#evaluate)
+- `ctrl+b` -> `🤖 Nano Bots: Evaluate`
 
 Note that you need to disable the default "Toggle bold" hotkey to use this.
 
 Another option is to use Chord Hotkeys, which you can do with plugins like [Sequence Hotkeys](https://obsidian.md/plugins?id=obsidian-sequence-hotkeys):
 
-`ctrl+b` `ctrl+b` -> 🤖 Nano Bots: [Evaluate](#evaluate)
-`ctrl+b` `ctrl+k` -> 🤖 Nano Bots: [Stop](#stop)
+- `ctrl+b` `ctrl+b` -> `🤖 Nano Bots: Evaluate`
+- `ctrl+b` `ctrl+k` -> `🤖 Nano Bots: Stop`
 
 Note that you also need to disable the default "Toggle Bold" hotkey to use this.
 
