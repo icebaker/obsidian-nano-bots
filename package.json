@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-nano-bots",
-	"version": "1.0.0",
-	"description": "Nano Bots for Obsidian: small, AI-powered bots that can be easily shared as a single file, designed to support multiple providers such as Cohere Command, Google Gemini, Maritaca AI, Mistral AI, Ollama, OpenAI ChatGPT, and others, + function calling.",
+	"version": "1.0.1",
+	"description": "Integrate AI LLMs from multiple providers, such as Cohere Command, Google Gemini, Maritaca AI, Mistral AI, Ollama, OpenAI ChatGPT, and others, plus function calling.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
