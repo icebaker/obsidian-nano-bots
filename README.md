@@ -29,7 +29,17 @@ Enhance your productivity and workflow by bringing the power of Artificial Intel
 
 ## Installation
 
-TODO
+Clone the repository into your `.obsidian/plugins/` folder inside your vault:
+
+```sh
+git clone \
+  https://github.com/icebaker/obsidian-nano-bots.git \
+  .obsidian/plugins/obsidian-nano-bots
+```
+
+Ensure that you have "Community Plugins" enabled in your Settings and restart Obsidian.
+
+After restarting, go to "Settings" -> "Community Plugins," find "Nano Bots," and enable it. Once enabled, you can start using it by opening your command palette and searching for "Nano Bots."
 ### Setup
 
 By default, access to the public Nano Bots API is available. However, it only provides a default Cartridge and may sometimes be slow or unavailable due to rate limits. This is common when many users around the world intensely use the API simultaneously.
@@ -142,4 +152,20 @@ In other words, there's no promise or responsibility from us about what happens 
 
 ## Development
 
-TODO
+```sh
+npm install
+
+npm run dev
+npm run build
+```
+
+For more details, refer to the Obsidian documentation:
+- https://github.com/obsidianmd/obsidian-api
+
+Releasing new releases:
+
+- Update the `manifest.json` with the new version number, such as `1.0.1`, and the minimum Obsidian version required for the latest release.
+- Update the `versions.json` file with `"new-plugin-version": "minimum-obsidian-version"` so older versions of Obsidian can download an older version of the plugin that's compatible.
+- Create new GitHub release using the new version number as the "Tag version". Use the exact version number, don't include a prefix `v`. See here for an example: https://github.com/obsidianmd/obsidian-sample-plugin/releases
+- Upload the files `manifest.json`, `main.js`, `styles.css` as binary attachments. Note: The manifest.json file must be in two places, first the root path of the repository and also in the release.
+- Publish the release.
