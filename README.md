@@ -106,11 +106,22 @@ provider:
 
 ## Shortcuts
 
-There are no default shortcuts, but you can add your own by going to... TODO
+There are no default shortcuts, but you can add your own by going to "Settings" -> "Hotkeys" and searching for "Nano Bots"
 
 ### Suggested Defaults
 
-TODO
+These are recommented shortcuts that you may choose do add:
+
+`ctrl+b` -> 🤖 Nano Bots: [Evaluate](#evaluate)
+
+Note that you need to disable the default "Toggle bold" hotkey to use this.
+
+Another option is to use Chord Hotkeys, which you can do with plugins like [Sequence Hotkeys](https://obsidian.md/plugins?id=obsidian-sequence-hotkeys):
+
+`ctrl+b` `ctrl+b` -> 🤖 Nano Bots: [Evaluate](#evaluate)
+`ctrl+b` `ctrl+k` -> 🤖 Nano Bots: [Stop](#stop)
+
+Note that you also need to disable the default "Toggle Bold" hotkey to use this.
 
 ## Privacy and Security: Frequently Asked Questions
 
