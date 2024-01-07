@@ -29,13 +29,13 @@ Enhance your productivity and workflow by bringing the power of Artificial Intel
 
 ## Installation
 
-Clone the repository into your `.obsidian/plugins/` folder inside your vault:
+Create a folder `obsidian-nano-bots` in your `.obsidian/plugins/` directory inside your vault:
 
 ```sh
-git clone \
-  https://github.com/icebaker/obsidian-nano-bots.git \
-  .obsidian/plugins/obsidian-nano-bots
+mkdir .obsidian/plugins/obsidian-nano-bots
 ```
+
+Download the files `manifest.json`, `main.js`, and `styles.css` from the [latest release](https://github.com/icebaker/obsidian-nano-bots/releases) and place them inside the `obsidian-nano-bots` folder.
 
 Ensure that you have "Community Plugins" enabled in your Settings and restart Obsidian.
 
