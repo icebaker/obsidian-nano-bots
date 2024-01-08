@@ -32,7 +32,7 @@ export default class NanoBots extends Plugin {
 
 		this.addCommand({
 			id: 'evaluate',
-			name: '🤖 Nano Bots: Evaluate',
+			name: 'Evaluate',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				NanoBotsController.run({ action: 'evaluate' }, this, editor);
 			}
@@ -40,7 +40,7 @@ export default class NanoBots extends Plugin {
 
 		this.addCommand({
 			id: 'stop',
-			name: '🤖 Nano Bots: Stop',
+			name: 'Stop',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				NanoBotsController.run({ action: 'stop' }, this, editor);
 			}
