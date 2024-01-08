@@ -27,6 +27,8 @@ Enhance your productivity and workflow by bringing the power of Artificial Intel
   - [Warranty and Disclaimer](#warranty-and-disclaimer)
 - [Development](#development)
 
+https://gist.github.com/assets/113217272/466b4a9e-a511-4c76-a3c2-e16c75622de6
+
 ## Installation
 
 Create a folder `obsidian-nano-bots` in your `.obsidian/plugins/` directory inside your vault:
@@ -69,6 +71,10 @@ Selected Text: Hi!
 
 Nano Bot: Hello! How can I assist you today?
 ```
+
+Demonstration:
+
+https://gist.github.com/assets/113217272/466b4a9e-a511-4c76-a3c2-e16c75622de6
 
 ### Stop
 
