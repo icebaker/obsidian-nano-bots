@@ -26,15 +26,31 @@ export default class NanoBots extends Plugin {
 		const statusBar = this.addStatusBarItem();
 		statusBar.setText('🤖');
 
-		statusBar.style.display = 'none';
+		statusBar.toggleClass('status-hidden', true);
 
 		NanoBotState.instance().setStatusBar(statusBar);
+
+		this.addCommand({
+			id: 'apply',
+			name: 'Apply',
+			editorCallback: (editor: Editor, view: MarkdownView) => {
+				NanoBotsController.run({ action: 'apply' }, this, editor);
+			}
+		});
 
 		this.addCommand({
 			id: 'evaluate',
 			name: 'Evaluate',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				NanoBotsController.run({ action: 'evaluate' }, this, editor);
+			}
+		});
+
+		this.addCommand({
+			id: 'prompt',
+			name: 'Prompt',
+			editorCallback: (editor: Editor, view: MarkdownView) => {
+				NanoBotsController.run({ action: 'prompt' }, this, editor);
 			}
 		});
 

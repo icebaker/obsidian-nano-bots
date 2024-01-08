@@ -24,7 +24,7 @@ class NanoBotState {
   stop() {
     this.state.status = 'stopped';
     this.state.thread = null;
-    this.statusBar.style.display = 'none'
+    this.statusBar.toggleClass('status-hidden', true);
   }
 
   update(cartridge, new_state = null) {
@@ -33,7 +33,7 @@ class NanoBotState {
     }
 
     if (this.state.status !== 'pending') {
-      this.statusBar.style.display = 'none'
+      this.statusBar.toggleClass('status-hidden', true);
       return;
     }
 
@@ -52,7 +52,7 @@ class NanoBotState {
     text += `(${seconds}s)`;
 
     this.statusBar.setText(text);
-    this.statusBar.style.display = '';
+    this.statusBar.toggleClass('status-hidden', false);
 
     if (this.state.status === 'pending') {
       setTimeout(() => this.update(cartridge), 500);

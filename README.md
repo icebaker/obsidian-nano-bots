@@ -11,6 +11,8 @@ Enhance your productivity and workflow by bringing the power of Artificial Intel
     - [Local API Instance](#local-api-instance)
 - [Commands](#commands)
   - [Evaluate](#evaluate)
+  - [Apply](#apply)
+  - [Prompt](#prompt)
   - [Stop](#stop)
 - [Cartridges](#cartridges)
   - [Default](#default)
@@ -34,7 +36,7 @@ https://gist.github.com/assets/113217272/466b4a9e-a511-4c76-a3c2-e16c75622de6
 Create a folder `obsidian-nano-bots` in your `.obsidian/plugins/` directory inside your vault:
 
 ```sh
-mkdir .obsidian/plugins/obsidian-nano-bots
+mkdir -p .obsidian/plugins/obsidian-nano-bots
 ```
 
 Download the files `manifest.json`, `main.js`, and `styles.css` from the [latest release](https://github.com/icebaker/obsidian-nano-bots/releases) and place them inside the `obsidian-nano-bots` folder.
@@ -69,12 +71,37 @@ Example:
 ```text
 Selected Text: Hi!
 
-Nano Bot: Hello! How can I assist you today?
+     Nano Bot: Hello! How can I assist you today?
 ```
 
 Demonstration:
 
 https://gist.github.com/assets/113217272/466b4a9e-a511-4c76-a3c2-e16c75622de6
+
+### Apply
+
+The Apply command works on a text selection. You select a piece of text and ask the Nano Bot to perform an action.
+
+Example:
+
+```text
+Selected Text: How are you doing?
+       Prompt: translate to french
+
+     Nano Bot: Comment allez-vous ?
+```
+
+### Prompt
+
+The Prompt command works like a traditional chat, allowing you to prompt a request and receive an answer from the Nano Bot.
+
+Example:
+
+```
+  Prompt: write a hello world in Ruby
+
+Nano Bot: puts "Hello, world!"
+```
 
 ### Stop
 
