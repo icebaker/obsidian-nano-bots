@@ -4,7 +4,7 @@
 
 Enhance your productivity and workflow by bringing the power of Artificial Intelligence to your writing app!
 
-![Nano Bots](https://raw.githubusercontent.com/icebaker/assets/main/obsidian-nano-bots/obsidian-nano-bots.png)
+![Nano Bots](https://raw.githubusercontent.com/icebaker/assets/main/obsidian-nano-bots/obsidian-cover.png)
 
 - [Installation](#installation)
   - [Setup](#setup)
