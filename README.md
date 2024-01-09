@@ -111,7 +111,7 @@ To interrupt a streaming response or stop waiting for a complete response, you c
 
 ## Cartridges
 
-When executing the [Evaluate](#evaluate) command mentioned earlier, a prompt will appear asking you to select a Cartridge. The default Cartridge is the standard chat interaction. However, you can create your own Cartridges which will automatically appear in the command palette.
+When executing the commands mentioned earlier, a prompt will appear asking you to select a Cartridge. The default Cartridge is the standard chat interaction. However, you can create your own Cartridges which will automatically appear in the command palette.
 
 For further details on Cartridges, please refer to the [Nano Bots specification](https://spec.nbots.io/#/README?id=cartridges).
 
