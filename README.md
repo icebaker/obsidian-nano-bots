@@ -60,8 +60,10 @@ Once you have access to the Nano Bots API, you can go to "Settings" -> "Communit
 
 After installation, you will have the following commands available in the command pallet:
 
-- 🤖 Nano Bots: [Evaluate](#evaluate)
-- 🤖 Nano Bots: [Stop](#stop)
+- Nano Bots: [Evaluate](#evaluate)
+- Nano Bots: [Apply](#apply)
+- Nano Bots: [Prompt](#prompt)
+- Nano Bots: [Stop](#stop)
 
 ### Evaluate
 
