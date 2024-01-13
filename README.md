@@ -9,6 +9,7 @@ Enhance your productivity and workflow by bringing the power of Artificial Intel
 - [Installation](#installation)
   - [Setup](#setup)
     - [Local API Instance](#local-api-instance)
+    - [Markdown Cartridges](#markdown-cartridges)
 - [Commands](#commands)
   - [Evaluate](#evaluate)
   - [Apply](#apply)
