@@ -58,7 +58,7 @@ Once you have access to the Nano Bots API, you can go to "Settings" -> "Communit
 
 ![Nano Bots Settings](https://raw.githubusercontent.com/icebaker/assets/main/obsidian-nano-bots/settings-v2.png)
 
-##### Markdown Cartridges
+#### Markdown Cartridges
 
 With a [Local API Instance](#local-api-instance), not only can you create custom YAML cartridges, but you can also design Markdown cartridges using your vault. To enable this, go to "Settings" > "Community Plugins" > "Nano Bots" and turn on "Custom Cartridges?". The default value for "Custom Cartridges Path", searches your vault for a "cartridges" or "Cartridges" folder. You may customize this path if needed. After configuration, any notes created in these folders become cartridges:
 
