@@ -105,20 +105,33 @@ class NanoBot {
   static async send_request(config, params, method, path, timeout = undefined, retries = 0) {
     const api_url = new URL(config.NANO_BOTS_API_ADDRESS + path);
     
-    const headers = new Headers({
+    const headers = {
       'Content-Type': 'application/json',
       NANO_BOTS_END_USER: 'obsidian-' + config.NANO_BOTS_END_USER
-    });
+    }
+
+    if(config.NANO_BOTS_CARTRIDGES_PATH) {
+      headers['NANO_BOTS_CARTRIDGES_PATH'] = config.NANO_BOTS_CARTRIDGES_PATH;
+    }
 
     const requestOptions = {
       method: method,
-      headers: headers,
+      headers: new Headers(headers),
       body: params ? JSON.stringify(params) : null
     };
 
     try {
       const response = await this.fetchWithTimeout(api_url, requestOptions, timeout);
       const data = await response.json();
+
+      if(!response.ok) {
+        if(data && data.error && data.error.message) {
+          throw new Error(data.error.message);
+        } else {
+          throw new Error(`Request returned status ${response.status}.`);
+        }
+      }
+
       return data;
     } catch (error) {
       if (retries < 2) {

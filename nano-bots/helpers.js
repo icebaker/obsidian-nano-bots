@@ -3,11 +3,17 @@ import ObsidianHelpers from './obsidian';
 
 class NanoBotsHelpers {
   static config(plugin) {
-    return {
+    const result = {
       NANO_BOTS_API_ADDRESS: plugin.settings.apiAddress,
       NANO_BOTS_STREAM: plugin.settings.stream,
       NANO_BOTS_END_USER: plugin.settings.endUser
     }
+
+    if(plugin.settings.sendCartridgesPath) {
+      result['NANO_BOTS_CARTRIDGES_PATH'] = plugin.settings.cartridgesPath;
+    }
+
+    return result;
   }
 
   static stop() {

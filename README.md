@@ -51,11 +51,20 @@ By default, access to the public Nano Bots API is available. However, it only pr
 To obtain the best performance and the opportunity to develop and personalize your own Cartridges, it is recommended that you use your own provider credentials to run your instance of the API locally. This approach will provide a superior and customized experience, in contrast to the convenient yet limited experience provided by the public API.
 #### Local API Instance
 
-To connect your plugin to your own local Nano Bots API, start a local instance using [nano-bots-api](https://github.com/icebaker/nano-bots-api). Please note that the local API still relies on external providers, which has its own policies regarding security and privacy. However, if you choose to use [Ollama](https://ollama.ai) with open source Models, you can ensure that everything is kept local and remains completely private.
+To connect your plugin to your own local Nano Bots API, start a local instance using [nano-bots-api](https://github.com/icebaker/nano-bots-api). Please note that the local API may still relies on external providers, which has its own policies regarding security and privacy. However, if you choose to use [Ollama](https://ollama.ai) with open source Models, you can ensure that everything is kept local and remains completely private.
 
 Once you have access to the Nano Bots API, you can go to "Settings" -> "Community Plugins" -> "Nano Bots" and add the API Address, which usually is http://localhost:3048:
 
-![Nano Bots Settings](https://raw.githubusercontent.com/icebaker/assets/main/obsidian-nano-bots/settings.png)
+![Nano Bots Settings](https://raw.githubusercontent.com/icebaker/assets/main/obsidian-nano-bots/settings-v2.png)
+
+##### Markdown Cartridges
+
+With a [Local API Instance](#local-api-instance), not only can you create custom YAML cartridges, but you can also design Markdown cartridges using your vault. To enable this, go to "Settings" > "Community Plugins" > "Nano Bots" and turn on "Custom Cartridges?". The default value for "Custom Cartridges Path", searches your vault for a "cartridges" or "Cartridges" folder. You may customize this path if needed. After configuration, any notes created in these folders become cartridges:
+
+![Markdown Cartridge](https://raw.githubusercontent.com/icebaker/assets/main/obsidian-nano-bots/cartridge-sample.png)
+
+Examples can be found here: [Markdown Cartridges Examples](https://gist.github.com/icebaker/39916aa4537db8b852d5c4d906c7e1ee)
+
 ## Commands
 
 After installation, you will have the following commands available in the command pallet:
