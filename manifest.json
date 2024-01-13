@@ -1,7 +1,7 @@
 {
 	"id": "nano-bots",
 	"name": "Nano Bots",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"minAppVersion": "0.15.0",
 	"description": "Integrate AI LLMs from multiple providers, such as Cohere Command, Google Gemini, Maritaca AI, Mistral AI, Ollama, OpenAI ChatGPT, and others, plus function calling.",
 	"author": "icebaker",
